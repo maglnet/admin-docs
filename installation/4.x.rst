@@ -53,3 +53,18 @@ If you are using a webhosting space (like e.g. `Netcup* <https://www.netcup.eu/b
 1. Download the latest version (not the source code) from `Github <https://github.com/Runalyze/Runalyze/releases>`_ and extract it to a folder of your choice.
 2. Pay attention to the directories. the ``web`` directory is the public web directory. Everything above should be better not visible to the public. Best practice is to setup a subdomain and point it to the ``web`` directory
 3. Follow the :doc:`installation instructions for 3.x </installation/3.x>`.
+
+Development installation using Vagrant
+--------------------------------------
+
+It is possible to get you local development environment (Apache/MySql) up and running using [Vagrant](https://www.vagrantup.com/).
+If you don't have a running Vagrant environment, please see the [Vagrant Installation Documentation](https://www.vagrantup.com/docs/installation/) for information.
+
+If you already have a existing vagrant environment simply run (the first start may take some time)::
+
+    vagrant up
+
+You should then be able to access Runalyze at [http://localhost:8080](http://localhost:8080)
+If you need shell access to your Runalyze vagrant box (e.g. to update your Runalyze installation) simply ssh into your box::
+
+    vagrant ssh
